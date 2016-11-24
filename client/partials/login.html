@@ -1,0 +1,35 @@
+<div ng-controller="loginController">
+  <!-- <p>{{test}}</p> -->
+<h1>Welcome!</h1>
+
+<p ng-repeat='error in reg_errors'>
+  {{error.message}}
+</p>
+
+  <div class="reg">
+    <h1>Registration</h1>
+    <form ng-submit = 'registerUser(user)'>
+      <h3>Name: <input type="text" ng-model="user.name"></h3>
+      <h3>Email: <input type="text" ng-model="user.email"></h3>
+      <h3>password: <input type="text" ng-model="user.password"></h3>
+      <h3>confirm password: <input type="text" ng-model="user.confpass"></h3>
+      <input type="submit">
+    </form>
+  </div>
+
+<br>
+  <p ng-repeat='error in login_errors'>
+    {{error.message}}
+  </p>
+<br>
+
+  <div class="login">
+    <h1>Login</h1>
+    <form ng-submit = 'loginUser(logged_user)'>
+      <h3>Email: <input type="text" ng-model="logged_user.email"></h3>
+      <h3>Password: <input type="text" ng-model="logged_user.password"></h3>
+            <input type="submit">
+    </form>
+  </div>
+
+</div>

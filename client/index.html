@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login and Registration</title>
+    <script type="text/javascript" src='bower_components/angular/angular.js'></script>
+    <script type="text/javascript" src='bower_components/angular-route/angular-route.js'></script>
+
+    <link rel="stylesheet" href="/static/css/styles.css" media="screen" title="no title">
+    <script type="text/javascript" src = 'assets/app.js'></script>
+
+    <script type="text/javascript" src = 'controllers/loginController.js'></script>
+    <script type="text/javascript" src = 'controllers/homeController.js'></script>
+    <script type="text/javascript" src = 'controllers/questionController.js'></script>
+    <script type="text/javascript" src = 'controllers/pollController.js'></script>
+    <!-- <script type="text/javascript" src = 'controllers/countController.js'></script> -->
+
+    <script type="text/javascript" src="factories/loginFactory.js"></script>
+    <script type="text/javascript" src="factories/questionFactory.js"></script>
+
+
+  </head>
+  <body ng-app="app">
+    <div ng-view="">
+    </div>
+
+
+
+  </body>
+</html>

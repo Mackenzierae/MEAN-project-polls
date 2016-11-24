@@ -1,0 +1,30 @@
+<div class="homeContainer" ng-controller="homeController">
+  <div class="header">
+    <h2>{{logged_user.name}} </h2> <input type = 'submit' value="logout" ng-click='logout()'>
+
+   <h4><a href="#/create"><button>Create a New Poll</button></a></h4>
+    <hr>
+  </div>
+  <div class="polls" ng-controller="questionController">
+    <h2>Current Polls:</h2>
+    <h3>  Search: <input type="text" ng-model="search"></h3>
+    <div class="table">
+          <table>
+            <tr>
+              <th class="head1">Name</th>
+              <th class="head2">Survey Question</th>
+              <th class="head3">Date Posted</th>
+              <th class="head4">Action</th>
+            </tr>
+            <tr ng-repeat="poll in all_polls">
+            <tr ng-repeat="poll in all_polls | filter:search track by $index">
+              <td>{{poll._user.name}}</td>
+              <td><a href="#poll/{{poll._id}}/">{{poll.question}}</a></td>
+              <td>{{poll.createdAt | date: "MMM dd, yyyy"}}</td>
+              <td><button ng-click="delete(poll._id)">Delete</button></td>
+            </tr>
+          </table>
+        </div>
+  </div>
+
+</div>

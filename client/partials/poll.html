@@ -1,0 +1,44 @@
+<div ng-controller="pollController">
+
+    <div class="header">
+      <h4><a href="#/home">Go to Polls</a></h4>
+      <hr>
+    </div>
+
+  <h2>{{poll.question}}</h2>
+  <h4>Click the Vote Button to choose one.</h4>
+
+
+  <div class="table">
+        <table>
+          <tr>
+            <th class="head">Option</th>
+            <th class="head">Current Count of Votes</th>
+            <th class="head">Action</th>
+          </tr>
+          <tr>
+            <td>{{poll.option_one}}</td>
+            <td>{{poll.votes_one.length}}</td>
+            <td><button ng-click="votes_one(poll._id)">Vote</button></td>
+            <!-- <td>{{count}}</td>
+            <td><button ng-click="increment()">Vote</button></td> -->
+          </tr>
+          <tr>
+            <td>{{poll.option_two}}</td>
+            <td>{{poll.votes_two.length}}</td>
+            <td><button ng-click="votes_two(poll._id)">Vote</button></td>
+          </tr>
+          <tr>
+            <td>{{poll.option_three}}</td>
+            <td>{{poll.votes_three.length}}</td>
+            <td><button ng-click="votes_three(poll._id)">Vote</button></td>
+          </tr>
+          <tr>
+            <td>{{poll.option_four}}</td>
+            <td>{{poll.votes_four.length}}</td>
+            <td><button ng-click="votes_four(poll._id)">Vote</button></td>
+          </tr>
+        </table>
+      </div>
+
+</div>

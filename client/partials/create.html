@@ -1,0 +1,24 @@
+<div class="createContainer" ng-controller="questionController">
+  <div class="header">
+    <h4><a href="#/home">Cancel</a></h4>
+    <hr>
+  </div>
+
+  <div>
+    <h2>Put the question and options here:</h2>
+
+    <p ng-repeat='error in user_errors'>
+      {{error.message}}
+    </p>
+
+    <form ng-submit="newPollQuestion(question)">
+      <h3>Question: <input type="text" ng-model="question.question"></h3>
+      <h3>Option 1: <input type="text" ng-model="question.option_one"></h3>
+      <h3>Option 2: <input type="text" ng-model="question.option_two"></h3>
+      <h3>Option 3: <input type="text" ng-model="question.option_three"></h3>
+      <h3>Option 4: <input type="text" ng-model="question.option_four"></h3>
+      <input type="submit" value="Create Poll">
+    </form>
+  </div>
+
+</div>

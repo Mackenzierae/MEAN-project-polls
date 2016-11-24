@@ -1,0 +1,55 @@
+*{
+  font-family: helvetica;
+  padding: .05%;
+}
+
+.homeContainer{
+  width: 800px;
+  height: 700px;
+  overflow-y: scroll;
+  border: 1px dashed grey;
+}
+.table{
+  padding: 10px;
+  display: inline-block;
+  width: 750px;
+  height: 750px;
+  border: 1px solid grey;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+  .head1{
+    background-color: lightgrey;
+    font-weight: 700;
+    width: 100px;
+    text-align: left;
+    padding: 3px;
+    overflow-x: scroll;
+  }
+
+  .head2{
+    background-color: lightgrey;
+    font-weight: 700;
+    width: 400px;
+    text-align: left;
+    padding: 3px;
+    overflow-x: scroll;
+  }
+
+  .head3{
+    background-color: lightgrey;
+    font-weight: 700;
+    width: 100px;
+    text-align: left;
+    padding: 3px;
+    overflow-x: scroll;
+  }
+
+  .head4{
+    background-color: lightgrey;
+    font-weight: 700;
+    width: 75px;
+    text-align: left;
+    padding: 3px;
+    overflow-x: scroll;
+  }
